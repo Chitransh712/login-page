@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RentBee</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <style>
+        
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Century Gothic; 
+}
+
+body {
+    font-family: "Montserrat";
+    text-align: center;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Montserrat-Bold";
+  }
+  
+  p {
+    color: #8f8f8f;
+  }
+  
+
+header{
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(images/c.png);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+ul{
+    float: right;
+    list-style-type: none;
+    margin-top: 25px;
+}
+
+ul li{
+    display: inline-block;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    transition: 0.6s ease;
+}
+
+ul li a:hover{
+    background-color: #fff;
+    color: #000;
+
+}
+
+ul li.active a{
+    background-color: #fff;
+    color: #000;
+}
+.logo img{
+    float: left;
+    width: 150px;
+    height: auto;
+}
+
+.main{
+    max-width: 1200px;
+    margin: auto;
+}
+
+.title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.title h1{
+    color: #fff;
+    font-size: 70px;
+}
+
+.button{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.btn{
+    border: 1px solid #fff;
+    padding: 10px 30px;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.6s ease;
+}
+.btn:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+/* Features Section */
+
+  #features{
+    padding: 7% 15%;
+  }
+
+.feature-box{
+    text-align: center;
+    padding: 5%;
+}
+
+p{
+    color: #8f8f8f;
+}
+
+.icon {
+    color: #607EAA;
+    margin-bottom: 1rem;
+  }
+  
+  .icon:hover {
+    color: #1C3879;
+  } 
+
+  /* Testimonial Section */
+
+  #testimonials{
+    
+    text-align: center;
+    /* background-color: #ef8172; */
+    background-color: #1C3879;
+    color: #fff;
+  }
+
+  .testimonial-image {
+    width: 10%;
+    border-radius: 100%;
+    margin: 20px;
+  }
+
+  .carousel-item{
+    padding: 7% 25%;
+  }
+
+  /* Footer Section */
+#footer{
+    padding: 7% 15%;
+}
+
+.social-icon {
+    margin: 20px 10px;
+  }
+    </style>
+
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="main">
+            <div class="logo">
+                <img src="images/logo.png" alt="">
+            </div>
+            <ul>
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="carlisting.html" target="_blank">Car Listing</a></li>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">Review</a></li>
+                <li><a href="#">Contact</a></li>
+                
+            </ul>
+        </div>
+        <div class="title">
+            <h1><strong>FIND THE RIGHT CAR FOR YOU</strong> </h1>
+        </div>
+
+        <div class="button">
+            <a href="login.html" target="_blank" class="btn"><strong>LOGIN/SIGN UP</strong></a>
+        </div>
+    </header>
+
+    <!-- Features -->
+
+  <section class="white-section" id="features">
+
+    <div class="container-fluid">
+
+      <div class="row">
+        <div class="feature-box col-lg-4">
+          <i class="icon fas fa-check-circle fa-4x"></i>
+          <h3 class="feature-title"><strong>Easy to use</strong> </h3>
+          <p>It's the easiest nut to crack.</p>
+        </div>
+
+        <div class="feature-box col-lg-4">
+          <i class="icon fas fa-bullseye fa-4x"></i>
+          <h3 class="feature-title"> <strong> Maximum Choice</strong></h3>
+          <p>We have cars of all price range</p>
+        </div>
+
+        <div class="feature-box col-lg-4">
+          <i class="icon fas fa-heart fa-4x"></i>
+          <h3 class="feature-title"> <strong>Guaranteed to work</strong></h3>
+          <p>Get the best deal or your money back.</p>
+        </div>
+      </div>
+
+
+    </div>
+  </section>
+
+
+  <!-- Testimonials -->
+
+  <section class="colored-section" id="testimonials">
+
+
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active container-fluid">
+            <h2>The experience was great traveling with this car rental website. I have used RentBee several times and have found it always convenient.</h2>
+            <img class="testimonial-image" src="images/m3.png" class="d-block w-100" alt="...">
+            <em>Urvashi [Bangalore, India]</em>
+          </div>
+          <div class="carousel-item container-fluid">
+            <h2>The prices of the cars for rental purpose are so reasonable and affordable. I just love this website. </h2>
+            <img class="testimonial-image" src="images/a.png" class="d-block w-100" alt="...">
+            <em>Aaryan [Mumbai, India]</em>
+          </div>
+          <div class="carousel-item container-fluid">
+            <h2>Renting cars from RentBee is the best decision one could make.</h2>
+            <img class="testimonial-image" src="images/m2.png" class="d-block w-100" alt="...">
+            <em>Disha [New Delhi, India]</em>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+  </section>
+   <!-- Footer -->
+
+   <footer class="white-section" id="footer">
+    <div class="container-fluid">
+      <i class="social-icon fab fa-facebook-f"></i>
+      <i class="social-icon fab fa-twitter"></i>
+      <i class="social-icon fab fa-instagram"></i>
+      <i class="social-icon fas fa-envelope"></i>
+      <p>© Copyright 2022 RentBee</p>
+    </div>
+  </footer>
+
+</body>
+</html>
